@@ -5,7 +5,7 @@ loadGetParams();
 function loadPage(pageUrl){
 
   if (pageUrl == undefined){
-      pageUrl = document.location.hostname + "/pages/index_page.html";
+      pageUrl = "/pages/index_page.html";
   }
 
 
