@@ -72,10 +72,91 @@
     grid-row: 1;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap');
+.dropbtn {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 700;
+    background-image: linear-gradient(to bottom, rgb(169, 223, 145, 0.5), rgb(122, 175, 170, 0.5));
+    color: white;
+    padding: 14px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    bottom: 14px;
+    text-decoration: none;
+}
+
+
+/* The container <div> - needed to position the menu-dropdown content */
+
+.menu-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+#link-list {
+    position: relative;
+    top: 25%
+}
+
+
+/* menu-dropdown Content (Hidden by Default) */
+
+.menu-dropdown-content {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 700;
+    display: none;
+    position: absolute;
+    background-color: #dadada;
+    width: 100%;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+
+/* Links inside the menu-dropdown */
+
+.menu-dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+
+/* Change color of menu-dropdown links on hover */
+
+.menu-dropdown-content a:hover {
+    background-color: #f1f1f1
+}
+
+
+/* Show the menu-dropdown menu on hover */
+
+.menu-dropdown:hover .menu-dropdown-content {
+    display: block;
+    background-color: rgb(255, 255, 255)
+}
+
+
+/* Change the background color of the menu-dropdown button when the menu-dropdown content is shown */
+
+.dropbtn:hover {
+    background-color: #3e8e41;
+}
+
+
+/* 
+Topbar
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+Content 
+*/
+
 .content-wrapper {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 25%);
+    grid-template-rows: repeat(3, 30%);
     grid-gap: 16px;
     text-align: center;
     color: white;
