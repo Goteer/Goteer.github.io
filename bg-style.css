@@ -7,10 +7,7 @@ body {
   overflow-x: hidden;
 }
 
-.main_container {
-    height: 1500px;
-    width: 100vw;
-}
+
 
 .bg_layer {
     top:0;left:0;
@@ -23,21 +20,22 @@ body {
     transform-style: preserve-3d;
     perspective: 1500px;
     height: 1920px;
+    
 }
 
 .bg_lines {
-    top:0;left:0;
+    top:-30;left:0;
     position: absolute;
     display:inline;
     overflow:hidden;
     z-index: 1;
     width: 100vw;
     height: 1500px;
-    background: linear-gradient(RGB(0,0,0,0) 20%,#FE49FF 23%, RGB(0,0,0,0) 25%,RGB(0,0,0,0) 56%,#FE49FF 58%,RGB(0,0,0,0) 60%);
+    background: linear-gradient(RGB(0,0,0,0) 20%,#FE49FF 23.5%, RGB(0,0,0,0) 25%,RGB(0,0,0,0) 55.5%,#FE49FF 58%,RGB(0,0,0,0) 60%);
 }
 
 .bg_retro_lines {
-    top:0;left:0;
+    top:-30;left:0;
     position: absolute;
     display:inline;
     overflow: hidden;
@@ -51,7 +49,7 @@ body {
 
 
 .logo_bg {
-    top:320px;
+    top:290px;
     left:-220px;
     position: absolute;
     display:inline;
@@ -61,7 +59,7 @@ body {
 }
 
 .top_grid_bg {
-    
+    top:-30;
     overflow: hidden;
     position: relative;
     display:inline;
@@ -69,6 +67,7 @@ body {
 }
 
 .bottom_grid_bg {
+    top:-30;
     overflow: hidden;
     position: relative;
     display:inline;
@@ -160,7 +159,7 @@ body {
 
 .stars, .twinkling, .clouds {
   position:absolute;
-  top:0;
+  top:-30;
   left:0;
   right:0;
   bottom:0;

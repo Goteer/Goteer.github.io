@@ -1,10 +1,11 @@
 <html lang=en>
 <head>
     <title>Strange respite</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bg-style.css">
+    <link rel="stylesheet" href="index-style.css">
 </head>    
-<body>
-    <div class="bg_layer">
+<body onscroll="scrollBackground()">
+    <div class="bg_layer" id="background-layer">
         <img src="resources/img/background/Grid.png" class="top_grid_bg">
         <img src="resources/img/background/Grid.png" class="bottom_grid_bg">
         <img src="resources/img/background/ImageLogo.png" class="logo_bg">
@@ -17,11 +18,80 @@
     
     
     <div class="main_container">
-    
-        <div class="content">this is basic content</div>
+        
+        <div class="topnav thin">
+          <a href="#">Link</a>
+          <a href="#">Link</a>
+          <a href="#">Link</a>
+        </div>
+        <br><br><br><br>
+        <div class="header thinnest">
+            <h1>Header</h1>
+            <p>Resize the browser window to see the responsive effect.</p>
+          </div>
+          
+          <div class="row">
+            <div class="column" style="width:18%">
+              <h2>Column</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+            </div>
+            
+            <div class="column" style="width:70%">
+              <h2>Column</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+            </div>
+          </div>
+          
+          <div class="row thick">
+            <div class="column" style="width:18%">
+              <h2>Column</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+             </div>
+            
+            <div class="column" style="width:70%">
+              <h2>Column</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+            </div>
+          </div>
+
+          <div class="row thin">
+            <div class="column" style="width:18%">
+              <h2>Column</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+            </div>
+            
+            <div class="column" style="width:70%">
+              <h2>Column</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+            </div>
+          </div>
+
+          <div class="row full-width">
+            <div class="column" style="width:18%">
+              <h2>Column</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+            </div>
+            
+            <div class="column" style="width:70%">
+              <h2>Column</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+            </div>
+          </div>
+
+          <div class="row thick">
+            <div class="column" style="width:18%">
+              <h2>Column</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+            </div>
+            
+            <div class="column" style="width:70%">
+              <h2>Column</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+            </div>
+          </div>
         
     </div>
     
-    
+<script src="index.js"></script>
 </body>
 </html>
