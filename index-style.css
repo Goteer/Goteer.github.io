@@ -1,112 +1,172 @@
-
-.main_container{
-    width:100%;
-    z-index: 10;
-    perspective-origin:center;
-    transform-style: preserve-3d;
-    perspective: 1500px;
+/*========= STYLE THAT APPLIES TO ALL CONTENT ==============*/
+.main_container > * {
+  align-content: center;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 10px;
+  padding: 15px;
+  background-color: rgba(97, 195, 163, 0.464);
+  transform: scale(1);
+  box-shadow: 0px 0px 10px black;
 }
 
-.main_container > * {
-    align-content: center;
-    width: 80%;
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-top:10px;
-    padding: 15px;
-    background-color: rgba(97, 195, 163, 0.464);
-    border-radius: 25px;
-    border-style:outset;
-    border-width: 10px;
-    border-color: rgba(219, 58, 255, 0.665);
-    
-    transform: scale(1);
-    box-shadow: 0px 0px 10px black;
-  }
-  
-  .thin{
-    position: relative;
-    left:5%;
-    width:70%;
-  }
 
-  .thinner{
-    position: relative;
-    left:10%;
-    width:60%;
-  }
+/*===============================================================*/
+/*========= REGULAR STYLES TO PLAY WITH START HERE ==============*/
+/*===============================================================*/
 
-  .thinnest{
-    position: relative;
-    left:15%;
-    width:50%;
-  }
+/*====================== 98.css overwrites ===========================*/
 
-  .thick{
-    position: relative;
-    left:-5%;
-    width:90%;
-  }
+.window {
+  background: rgb(72, 137, 115);
+  box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px rgb(110, 210, 177), inset -2px -2px rgb(36, 61, 52), inset 2px 2px rgb(89, 233, 185);
+  padding: 3px
+}
 
-  .thicker{
-    position: relative;
-    left:-7.5%;
-    width:95%;
-  }
+.title-bar {
+  align-items: center;
+  background: linear-gradient(90deg, rgb(222, 72, 197), rgb(134, 36, 127));
+  display: flex;
+  justify-content: space-between;
+  padding: 3px 2px 3px 3px
+}
 
-  .full-width{
-    position: relative;
-    left:-9.8%;
-    width:97%;
-  }
+button,
+input[type=reset],
+input[type=submit] {
+  background: rgb(72, 137, 115);
+  box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px rgb(110, 210, 177), inset -2px -2px rgba(36, 61, 52, 1), inset 2px 2px rgb(89, 233, 185);
+}
 
-  /* Style the header */
-  .header {
-    background-color: #f1f1f1;
-    padding: 20px;
-    text-align: center;
-  }
-  
-  /* Style the top navigation bar */
-  .topnav {
-    overflow: hidden;
-    background-color: #333;
-  }
-  
-  /* Style the topnav links */
-  .topnav a {
-    float: left;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  
-  /* Change color on hover */
-  .topnav a:hover {
-    background-color: #ddd;
-    color: black;
-  }
+button:not(:disabled):active,
+input[type=reset]:not(:disabled):active,
+input[type=submit]:not(:disabled):active {
+  box-shadow: inset -1px -1px rgb(110, 210, 177), inset 1px 1px #0a0a0a, inset -2px -2px rgb(29, 47, 41), inset 2px 2px rgb(62, 154, 123);
+  text-shadow: 1px 1px #222
+}
 
-  
-  /* Create three equal columns that floats next to each other */
+.inset-content {
+  background: rgb(187, 255, 232);
+  box-shadow: inset -1px -1px rgb(131, 230, 197), inset 1px 1px rgb(57, 93, 80), inset -2px -2px rgb(107, 181, 152), inset 2px 2px #0a0a0a;
+  display: block;
+  margin: 0;
+  padding: 6px;
+  margin-bottom:8px;
+}
+
+/*====================== Typical html5 classes ===========================*/
+
+/* Style the header */
+.header {
+  background-color: #f1f1f1;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+
+/*===============================================================*/
+/*================== REGULAR STYLES STOP HERE ===================*/
+/*===============================================================*/
+
+
+/*====================== CONVENIENCE CLASSES ===========================*/
+
+.regular-width {
+  position: relative;
+  left: 5%;
+  width: 70%;
+}
+
+
+.thin {
+  position: relative;
+  left: 10%;
+  width: 60%;
+}
+
+.thinner {
+  position: relative;
+  left: 20%;
+  width: 40%;
+}
+
+.thinnest {
+  position: relative;
+  left: 30%;
+  width: 20%;
+}
+
+
+.thick {
+  position: relative;
+  left: -5%;
+  width: 90%;
+}
+
+.thicker {
+  position: relative;
+  left: -7.5%;
+  width: 95%;
+}
+
+.full-width {
+  position: relative;
+  left: -9.8%;
+  width: 97%;
+}
+
+/*====================== RESPONSIVENESS STUFF ===========================*/
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 31%;
+  padding: 15px;
+}
+
+/* Clear floats after the columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width:600px) {
   .column {
-    float: left;
-    width: 31%;
-    padding: 15px;
+    width: 100%;
   }
-  
-  /* Clear floats after the columns */
-  .row::after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  
-  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-  @media screen and (max-width:600px) {
-    .column {
-      width: 100%;
-    }
-  }
+}
+
+/*========= STYLE THAT DEFINES CONTENT BOUNDARIES, DO NOT TOUCH ==============*/
+.main_container {
+  width: 100%;
+  z-index: 10;
+  perspective-origin: center;
+  transform-style: preserve-3d;
+  perspective: 1500px;
+  color: #222;
+}
