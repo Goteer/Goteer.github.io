@@ -19,18 +19,21 @@ function scrollBackground(){
             var elementCenter = document.getElementsByClassName("main_container")[0].children[i].getBoundingClientRect().y+document.getElementsByClassName("main_container")[0].children[i].clientHeight/2;
             
             if (elementTop > window.innerHeight/2 && elementBottom > window.innerHeight/2){
-                var scale = 1-Math.abs(((elementTop/window.innerHeight)-0.5)/15);
+                var scale = 1-Math.abs(((elementTop/window.innerHeight)-0.5)/15)*2;
+                var rotation = -800*Math.abs(((elementTop/window.innerHeight)-0.5)/15);
             }else{
                 if (elementTop <= window.innerHeight/2 && elementBottom >= window.innerHeight/2){
-                    var scale = 1
+                    var scale = 1;
+                    var rotation = 0;
                 }else{
                     if (elementBottom < window.innerHeight/2){
-                        var scale = 1-Math.abs(((elementBottom/window.innerHeight)-0.5)/15);
+                        var scale = 1-Math.abs(((elementBottom/window.innerHeight)-0.5)/15)*1.25;
+                        var rotation = 100*Math.abs(((elementTop/window.innerHeight)-0.5)/15);
                     }
                 }
             }
 
-            document.getElementsByClassName("main_container")[0].children[i].style.transform = "scale("+scale+")" ;
+            document.getElementsByClassName("main_container")[0].children[i].style.transform = "scale("+scale+") rotateX("+rotation+"deg)" ;
     }}
 
 }
